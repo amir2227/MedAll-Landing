@@ -1,28 +1,28 @@
-$(function() {
-    
+$(function () {
+
     "use strict";
-    
+
     //===== Prealoder
-    
-    $(window).on('load', function(event) {
+
+    $(window).on('load', function (event) {
         $('.preloader').delay(100).fadeOut(100);
     });
-    
-    
+
+
     //===== Sticky
 
     $(window).on('scroll', function (event) {
         var scroll = $(window).scrollTop();
         if (scroll < 20) {
             $(".header_navbar").removeClass("sticky");
-            $(".header_navbar img").attr("src", "assets/images/logo.svg");
+            $(".header_navbar img").attr("src", "assets/images/logo2.png");
         } else {
             $(".header_navbar").addClass("sticky");
-            $(".header_navbar img").attr("src", "assets/images/logo-2.svg");
+            $(".header_navbar img").attr("src", "assets/images/logo1.png");
         }
     });
-    
-    
+
+
     //===== Section Menu Active
 
     var scrollLink = $('.page-scroll');
@@ -40,7 +40,7 @@ $(function() {
             }
         });
     });
-    
+
     //===== close navbar-collapse when a  clicked
 
     $(".navbar-nav a").on('click', function () {
@@ -54,54 +54,54 @@ $(function() {
     $(".navbar-nav a").on('click', function () {
         $(".navbar-toggler").removeClass('active');
     });
-    
-    
+
+
     //===== Back to top
-    
+
     // Show or hide the sticky footer button
-    $(window).on('scroll', function(event) {
-        if($(this).scrollTop() > 600){
+    $(window).on('scroll', function (event) {
+        if ($(this).scrollTop() > 600) {
             $('.back-to-top').fadeIn(200)
-        } else{
+        } else {
             $('.back-to-top').fadeOut(200)
         }
     });
-    
-    
+
+
     //Animate the scroll to yop
-    $('.back-to-top').on('click', function(event) {
+    $('.back-to-top').on('click', function (event) {
         event.preventDefault();
-        
+
         $('html, body').animate({
             scrollTop: 0,
         }, 1500);
     });
-    
-    
+
+
     //=====  WOW active
-    
+
     var wow = new WOW({
         boxClass: 'wow', //
         mobile: false, // 
     })
     wow.init();
-    
-    
+
+
     //===== 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });

@@ -184,18 +184,21 @@ p {
 
 /*===== All Section Title Style =====*/
 .section_title .title {
-  font-size: 44px;
+  font-size: 32px;
   font-weight: 700;
 }
 
 @media (max-width: 767px) {
   .section_title .title {
-    font-size: 32px;
+    font-size: 18px;
   }
 }
 
 .section_title p {
   margin-top: 25px;
+}
+.section_title {
+  margin-bottom: 40px;
 }
 
 /*===== All Slick Slide Outline Style =====*/
@@ -949,7 +952,7 @@ p {
 }
 
 .header_hero_content .header_title {
-  font-size: 54px;
+  font-size: 34px;
   font-weight: 700;
   color: #fff;
   margin-top: 20px;
@@ -1128,6 +1131,10 @@ p {
 /*===========================
        09.PRICING css 
 ===========================*/
+#pricing{
+  position: relative;
+  z-index: 10;
+}
 .single_pricing {
   -webkit-box-shadow: 0px 0px 35px 0px rgba(158, 158, 158, 0.1);
   box-shadow: 0px 0px 35px 0px rgba(158, 158, 158, 0.1);
@@ -1163,7 +1170,7 @@ p {
 
 .single_pricing .pricing_top_bar .price {
   display: block;
-  font-size: 44px;
+  font-size: 18px;
   font-weight: 700;
   margin-top: 20px;
   padding-bottom: 20px;
