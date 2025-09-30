@@ -1646,3 +1646,22 @@ p {
   background-color: #3698EE;
 }
 /*# sourceMappingURL=style.css.map */
+/* video styles */
+.iframe-container{
+  height: 500px;
+}
+
+.video-container{
+  width:100%;
+  height: 100%;
+}
+
+.video-container iframe{
+  width: 100%;
+  height: 100%;
+}
+/*  */
+.card-img-top{
+  max-height: 282px;
+  object-fit: cover;
+}
